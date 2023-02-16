@@ -34,4 +34,4 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
         run: |
-          npx cypress-slack-reporter --report-dir ./cypress/reports/mochareports --ci-provider none
+          npx cypress-slack-reporter --report-dir cypress/reports/mochareports --ci-provider none

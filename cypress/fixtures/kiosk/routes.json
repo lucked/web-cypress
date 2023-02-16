@@ -1,0 +1,11 @@
+{
+  "staging": {
+    "baseUrl": "https://localhost:3002/"
+  },
+  "release": {
+    "baseUrl": "https://localhost:3002/"
+  },
+  "production": {
+    "baseUrl": "https://localhost:3002/"
+  }
+}

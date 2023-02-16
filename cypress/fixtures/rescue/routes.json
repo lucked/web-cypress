@@ -1,0 +1,17 @@
+{
+  "staging": {
+    "baseUrl": "https://rescue.rc.adopets.com/",
+    "rescueUrl": "https://rescue.rc.adopets.com/",
+    "adopterUrl": "https://adopt.rc.adopets.com/"
+  },
+  "release": {
+    "baseUrl": "https://rescue.rc.adopets.com/",
+    "rescueUrl": "https://rescue.rc.adopets.com/",
+    "adopterUrl": "https://adopt.rc.adopets.com/"
+  },
+  "production": {
+    "baseUrl": "https://adopt.rc.adopets.com/",
+    "rescueUrl": "https://adopt.adopets.com/",
+    "adopterUrl": "https://rescue.adopets.com/"
+  }
+}

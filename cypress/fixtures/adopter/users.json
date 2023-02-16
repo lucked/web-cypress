@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "primary": {
+      "name": "User name",
+      "email": "test@cypress_template_test.com",
+      "password": "user password"
+    }
+  },
+  "release": {
+    "primary": {
+      "name": "User name",
+      "email": "test@cypress_template_test.com",
+      "password": "user password"
+    }
+  },
+  "production": {
+    "primary": {
+      "name": "User name",
+      "email": "test@cypress_template_test.com",
+      "password": "user password"
+    }
+  }
+}

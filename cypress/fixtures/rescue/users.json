@@ -1,0 +1,35 @@
+{
+  "staging": {
+    "primary": {
+      "name": "standard_user",
+      "email": "luckedlucas+1@gmail.com",
+      "password": "123123"
+    },
+    "nonExisting": {
+      "name": "foo",
+      "password": "bar"
+    }
+  },
+  "release": {
+    "primary": {
+      "name": "standard_user",
+      "email": "test@cypress_template_test.com",
+      "password": "secret_sauce"
+    },
+    "nonExisting": {
+      "name": "foo",
+      "password": "bar"
+    }
+  },
+  "production": {
+    "primary": {
+      "name": "standard_user",
+      "email": "test@cypress_template_test.com",
+      "password": "secret_sauce"
+    },
+    "nonExisting": {
+      "name": "foo",
+      "password": "bar"
+    }
+  }
+}

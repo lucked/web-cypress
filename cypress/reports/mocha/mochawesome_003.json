@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-02-16T17:44:44.788Z",
+    "end": "2023-02-16T17:45:22.361Z",
+    "duration": 37573,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "764a9d8a-92ca-43ce-9c97-dbb8c33be026",
+      "title": "",
+      "fullFile": "cypress\\e2e\\adopter\\default.cy.ts",
+      "file": "cypress\\e2e\\adopter\\default.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "530922df-7f8a-44a0-b0b2-fa418fbcbd2b",
+          "title": "Adopt a pet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should create a pet",
+              "fullTitle": "Adopt a pet should create a pet",
+              "timedOut": null,
+              "duration": 34779,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(1920, 961);\ncy.visit(_support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"routes\"].adopterUrl + 'login');\ncy.logInAdopter();\nconst pet_uuid = 'pet/070171d5-0ce1-4b02-920d-cdc799272aed';\ncy.applyToPet({ pet_uuid });",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Unable to find an element by: [data-cy=\"input-loginEmail\"]\n\nIgnored nodes: comments, script, style\n<html\n  lang=\"en\"\n>\n  <head>\n     \n    <meta\n      charset=\"utf-8\"\n    />\n    <meta\n      content=\"width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1\"\n      name=\"viewport\"\n    />\n    <meta\n      content=\"#000000\"\n      name=\"theme-color\"\n    />\n    <link\n      href=\"/manifest.json\"\n      rel=\"manifest\"\n    />\n    <link\n      href=\"/favicon.ico\"\n      rel=\"shortcut icon\"\n    />\n    <link\n      href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\"\n    />\n    <link\n      href=\"https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <title>\n      Adopets\n    </title>\n    <link\n      href=\"/static/css/2.40c33ece.chunk.css\"\n      rel=\"stylesheet\"\n    />\n    <link\n      href=\"/static/css/main.7f209bf5.chunk.css\"\n      rel=\"stylesheet\"\n    />\n  </head>\n  <body\n    class=\"themeLight menuShadow borderLess\"\n  >\n    <noscript>\n      You need to enable JavaScript to run this app.\n    </noscript>\n    <div\n      id=\"root\"\n    >\n      <div\n        class=\"sc-bdVaJa MkpTs\"\n        id=\"adopets-root\"\n      >\n        \n        \n        <div\n          class=\"sc-bdVaJa MkpTs\"\n        >\n          <section\n            class=\"ant-layout\"\n          >\n            <div />\n            <header\n              class=\"ant-layout-header\"\n              id=\"MainHeader__\"\n            >\n              <div\n                class=\"header\"\n              >\n                <div\n                  class=\"container\"\n                >\n                  <div\n                    class=\"partners-logo\"\n                  >\n                    <div\n                      class=\"poweredby-container\"\n                    >\n                      <img\n                        class=\"logo\"\n                        src=\"/static/media/adopets-logo-pink.ff9c1080.svg\"\n                      />\n                    </div>\n                  </div>\n                  <div\n                    class=\"sc-bdVaJa iVGYFq\"\n                    style=\"flex-grow: 1;\"\n                  />\n                  <div\n                    id=\"UserActions__\"\n                  >\n                    <div\n                      class=\"buttons-container\"\n                    >\n                      <a\n                        href=\"https://help.adopets.com/en/\"\n                        target=\"_blank\"\n                      >\n                        <button\n                          class=\"intercom-trigger\"\n                        >\n                          <span>\n                            Help\n                          </span>\n                        </button>\n                      </a>\n                      <a\n                        href=\"/login\"\n                      >\n                        <button\n                          class=\"button-basic primary-button \"\n                          style=\"margin-left: 8px; margin-right: 8px;\"\n                        >\n                          <span>\n                            Account\n                          </span>\n                        </button>\n                      </a>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </header>\n            <main\n              class=\"ant-layout-content\"\n              style=\"height: 100%; background-color: rgb(247, 247, 252);\"\n            >\n              <div\n                class=\"sc-bdVaJa dpZZjQ main-content\"\n              >\n                <div\n                  class=\"sc-cqCuEk ZcabD\"\n                >\n                  <div\n                    class=\"sc-bdVaJa gbTChr\"\n                  >\n                    <div\n                      class=\"sc-bdVaJa fGjXNd\"\n                    >\n                      <div\n                        class=\"sc-bdVaJa dpZZjQ\"\n                      >\n                        <div\n                          class=\"sc-bdVaJa sc-eilVRo dBboyT\"\n                          variant=\"h2\"\n                        >\n                          Enter your email and password\n                        </div>\n                      </div>\n                      <form>\n                        <div\n                          class=\"sc-bdVaJa cPQupw\"\n                        >\n                          <div\n                            class=\"form-group-wraper\"\n                            style=\"text-align: left;\"\n                          >\n                            <div\n                              class=\"form-group\"\n                            >\n                              <div\n                                class=\"sc-bdVaJa jQBLqg\"\n                              >\n                                <div\n                                  class=\"sc-bdVaJa irxarB\"\n                                >\n                                  <label\n                                    style=\"float: left; font-weight: 500; font-size: 16px; line-height: 16px;\"\n                                  >\n                                    Email:\n                                  </label>\n                                </div>\n                                <div\n                                  class=\"sc-bdVaJa dpZZjQ\"\n                                />\n                              </div>\n                              <div\n                                class=\"sc-gJWqzi bgmCgm\"\n                              >\n                                <input\n                                  autocomplete=\"\"\n                                  background=\"inherit\"\n                                  class=\"ant-input sc-rBLzX hdqVWg form-input\"\n                                  name=\"loginEmail\"\n                                  placeholder=\"\"\n                                  type=\"text\"\n                                  value=\"\"\n                                />\n                              </div>\n                            </div>\n                          </div>\n                        </div>\n                        <div\n                          class=\"sc-bdVaJa jllOcd\"\n                        >\n                          <div\n                            class=\"form-group-wraper\"\n                            style=\"text-align: left;\"\n                          >\n                            <div\n                              class=\"form-group\"\n                            >\n                              <div\n                                class=\"sc-bdVaJa jQBLqg\"\n                              >\n                                <div\n                                  class=\"sc-bdVaJa irxarB\"\n                                >\n                                  <label\n                                    style=\"float: left; font-weight: 500; font-size: 16px; line-height: 16px;\"\n                                  >\n                                    Current Password:\n                                  </label>\n                                </div>\n                                <div\n                                  class=\"sc-bdVaJa dpZZjQ\"\n                     ...",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Unable to find an element by: [data-cy=\"input-loginEmail\"]\n\nIgnored nodes: comments, script, style\n<html\n  lang=\"en\"\n>\n  <head>\n     \n    <meta\n      charset=\"utf-8\"\n    />\n    <meta\n      content=\"width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1\"\n      name=\"viewport\"\n    />\n    <meta\n      content=\"#000000\"\n      name=\"theme-color\"\n    />\n    <link\n      href=\"/manifest.json\"\n      rel=\"manifest\"\n    />\n    <link\n      href=\"/favicon.ico\"\n      rel=\"shortcut icon\"\n    />\n    <link\n      href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\"\n    />\n    <link\n      href=\"https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <title>\n      Adopets\n    </title>\n    <link\n      href=\"/static/css/2.40c33ece.chunk.css\"\n      rel=\"stylesheet\"\n    />\n    <link\n      href=\"/static/css/main.7f209bf5.chunk.css\"\n      rel=\"stylesheet\"\n    />\n  </head>\n  <body\n    class=\"themeLight menuShadow borderLess\"\n  >\n    <noscript>\n      You need to enable JavaScript to run this app.\n    </noscript>\n    <div\n      id=\"root\"\n    >\n      <div\n        class=\"sc-bdVaJa MkpTs\"\n        id=\"adopets-root\"\n      >\n        \n        \n        <div\n          class=\"sc-bdVaJa MkpTs\"\n        >\n          <section\n            class=\"ant-layout\"\n          >\n            <div />\n            <header\n              class=\"ant-layout-header\"\n              id=\"MainHeader__\"\n            >\n              <div\n                class=\"header\"\n              >\n                <div\n                  class=\"container\"\n                >\n                  <div\n                    class=\"partners-logo\"\n                  >\n                    <div\n                      class=\"poweredby-container\"\n                    >\n                      <img\n                        class=\"logo\"\n                        src=\"/static/media/adopets-logo-pink.ff9c1080.svg\"\n                      />\n                    </div>\n                  </div>\n                  <div\n                    class=\"sc-bdVaJa iVGYFq\"\n                    style=\"flex-grow: 1;\"\n                  />\n                  <div\n                    id=\"UserActions__\"\n                  >\n                    <div\n                      class=\"buttons-container\"\n                    >\n                      <a\n                        href=\"https://help.adopets.com/en/\"\n                        target=\"_blank\"\n                      >\n                        <button\n                          class=\"intercom-trigger\"\n                        >\n                          <span>\n                            Help\n                          </span>\n                        </button>\n                      </a>\n                      <a\n                        href=\"/login\"\n                      >\n                        <button\n                          class=\"button-basic primary-button \"\n                          style=\"margin-left: 8px; margin-right: 8px;\"\n                        >\n                          <span>\n                            Account\n                          </span>\n                        </button>\n                      </a>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </header>\n            <main\n              class=\"ant-layout-content\"\n              style=\"height: 100%; background-color: rgb(247, 247, 252);\"\n            >\n              <div\n                class=\"sc-bdVaJa dpZZjQ main-content\"\n              >\n                <div\n                  class=\"sc-cqCuEk ZcabD\"\n                >\n                  <div\n                    class=\"sc-bdVaJa gbTChr\"\n                  >\n                    <div\n                      class=\"sc-bdVaJa fGjXNd\"\n                    >\n                      <div\n                        class=\"sc-bdVaJa dpZZjQ\"\n                      >\n                        <div\n                          class=\"sc-bdVaJa sc-eilVRo dBboyT\"\n                          variant=\"h2\"\n                        >\n                          Enter your email and password\n                        </div>\n                      </div>\n                      <form>\n                        <div\n                          class=\"sc-bdVaJa cPQupw\"\n                        >\n                          <div\n                            class=\"form-group-wraper\"\n                            style=\"text-align: left;\"\n                          >\n                            <div\n                              class=\"form-group\"\n                            >\n                              <div\n                                class=\"sc-bdVaJa jQBLqg\"\n                              >\n                                <div\n                                  class=\"sc-bdVaJa irxarB\"\n                                >\n                                  <label\n                                    style=\"float: left; font-weight: 500; font-size: 16px; line-height: 16px;\"\n                                  >\n                                    Email:\n                                  </label>\n                                </div>\n                                <div\n                                  class=\"sc-bdVaJa dpZZjQ\"\n                                />\n                              </div>\n                              <div\n                                class=\"sc-gJWqzi bgmCgm\"\n                              >\n                                <input\n                                  autocomplete=\"\"\n                                  background=\"inherit\"\n                                  class=\"ant-input sc-rBLzX hdqVWg form-input\"\n                                  name=\"loginEmail\"\n                                  placeholder=\"\"\n                                  type=\"text\"\n                                  value=\"\"\n                                />\n                              </div>\n                            </div>\n                          </div>\n                        </div>\n                        <div\n                          class=\"sc-bdVaJa jllOcd\"\n                        >\n                          <div\n                            class=\"form-group-wraper\"\n                            style=\"text-align: left;\"\n                          >\n                            <div\n                              class=\"form-group\"\n                            >\n                              <div\n                                class=\"sc-bdVaJa jQBLqg\"\n                              >\n                                <div\n                                  class=\"sc-bdVaJa irxarB\"\n                                >\n                                  <label\n                                    style=\"float: left; font-weight: 500; font-size: 16px; line-height: 16px;\"\n                                  >\n                                    Current Password:\n                                  </label>\n                                </div>\n                                <div\n                                  class=\"sc-bdVaJa dpZZjQ\"\n                     ...\n    at Context.logInAdopter (webpack:///./cypress/support/e2e/adopter/commands.ts:6:7)",
+                "diff": null
+              },
+              "uuid": "157d8a8d-c905-442d-b185-f6a44faae176",
+              "parentUUID": "530922df-7f8a-44a0-b0b2-fa418fbcbd2b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "157d8a8d-c905-442d-b185-f6a44faae176"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 34779,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-02-16T17:45:31.310Z",
+    "end": "2023-02-16T17:46:15.117Z",
+    "duration": 43807,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3fd3f4d5-2532-4940-8e9b-82b3f7774339",
+      "title": "",
+      "fullFile": "cypress\\e2e\\rescue\\default.cy.ts",
+      "file": "cypress\\e2e\\rescue\\default.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "329cf112-d5ea-4bc6-a93c-233bfc4a1646",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should successfully log in",
+              "fullTitle": "Login Should successfully log in",
+              "timedOut": null,
+              "duration": 183,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(_support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"baseUrl\"] + 'login');\ncy.logIn();\ncy.url().should('include', 'my-account/applications-active');",
+              "err": {
+                "message": "TypeError: cy.logIn is not a function",
+                "estack": "TypeError: cy.logIn is not a function\n    at Context.eval (webpack:///./cypress/e2e/rescue/default.cy.ts:6:7)",
+                "diff": null
+              },
+              "uuid": "60c97967-86d1-4f4c-997c-1d0b1dbc55c4",
+              "parentUUID": "329cf112-d5ea-4bc6-a93c-233bfc4a1646",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not log in with non-existing user",
+              "fullTitle": "Login Should not log in with non-existing user",
+              "timedOut": null,
+              "duration": 41563,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(_support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"routes\"].rescueUrl);\ncy.logInRescue();\ncy.get('[data-test=\"error\"]').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-test=\"error\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-test=\"error\"]`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/rescue/default.cy.ts:13:34)",
+                "diff": null
+              },
+              "uuid": "3bedebe0-3a1f-48f9-8b69-9397c254d2b1",
+              "parentUUID": "329cf112-d5ea-4bc6-a93c-233bfc4a1646",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "60c97967-86d1-4f4c-997c-1d0b1dbc55c4",
+            "3bedebe0-3a1f-48f9-8b69-9397c254d2b1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 41746,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

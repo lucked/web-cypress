@@ -1,0 +1,900 @@
+{
+  "stats": {
+    "suites": 12,
+    "tests": 18,
+    "passes": 13,
+    "pending": 0,
+    "failures": 5,
+    "start": "2022-11-22T18:47:07.072Z",
+    "end": "2023-02-16T18:49:14.558Z",
+    "duration": 240118,
+    "testsRegistered": 18,
+    "passPercent": 72.22222222222223,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9d549f05-6eb3-48f4-926c-0ccb246f9a43",
+      "title": "",
+      "fullFile": "cypress\\e2e\\adopter\\default.cy.ts",
+      "file": "cypress\\e2e\\adopter\\default.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e539f57d-840b-4a9a-950b-78a609560499",
+          "title": "Adopt a pet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should create a pet",
+              "fullTitle": "Adopt a pet should create a pet",
+              "timedOut": null,
+              "duration": 83766,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(1920, 961);\ncy.visit(_support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"routes\"].adopterUrl + 'login');\ncy.logInAdopter();\nconst pet_uuid = 'pet/070171d5-0ce1-4b02-920d-cdc799272aed';\ncy.applyToPet({ pet_uuid });",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Unable to find an element by: [data-cy=\"pets.notification.created\"]\n\nIgnored nodes: comments, script, style\n<html\n  lang=\"en\"\n>\n  <head>\n     \n    \n    \n    <meta\n      charset=\"utf-8\"\n    />\n    \n    \n    <meta\n      content=\"width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, maximum-scale=1.0\"\n      name=\"viewport\"\n    />\n    \n    \n    <meta\n      content=\"#000000\"\n      name=\"theme-color\"\n    />\n    \n    \n    \n    \n    <link\n      href=\"/manifest.json\"\n      rel=\"manifest\"\n    />\n    \n    \n    <link\n      href=\"/favicon.ico\"\n      rel=\"shortcut icon\"\n    />\n    \n    \n    <link\n      href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\"\n      type=\"text/css\"\n    />\n    \n    \n    <link\n      href=\"https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap\"\n      rel=\"stylesheet\"\n    />\n    \n    \n    \n\n    \n    \n\n    \n    \n    \n    \n    \n    \n\n    \n    \n\n    \n    \n    \n    \n    \n    <title>\n      Adopets\n    </title>\n    \n  \n  </head>\n  \n  \n  <body\n    class=\"themeLight menuShadow borderLess\"\n  >\n    \n    \n    <noscript>\n      \n      You need to enable JavaScript to run this app.\n    \n    </noscript>\n    \n    \n    <div\n      id=\"root\"\n    >\n      <div\n        class=\"sc-bdVaJa MkpTs\"\n        id=\"adopets-root\"\n      >\n        \n        \n        <div\n          class=\"sc-bdVaJa MkpTs\"\n        >\n          <section\n            class=\"ant-layout\"\n          >\n            <div />\n            <header\n              class=\"ant-layout-header\"\n              id=\"MainHeader__\"\n            >\n              <div\n                class=\"header\"\n              >\n                <div\n                  class=\"container\"\n                >\n                  <div\n                    class=\"partners-logo\"\n                  >\n                    <div\n                      class=\"__PictureFrame avatar-circle\"\n                    >\n                      <svg\n                        aria-hidden=\"true\"\n                        class=\"svg-inline--fa fa-user-circle fa-2x \"\n                        color=\"#E52E6B\"\n                        data-icon=\"user-circle\"\n                        data-prefix=\"fas\"\n                        focusable=\"false\"\n                        role=\"img\"\n                        viewBox=\"0 0 496 512\"\n                        xmlns=\"http://www.w3.org/2000/svg\"\n                      >\n                        <path\n                          d=\"M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z\"\n                          fill=\"currentColor\"\n                        />\n                      </svg>\n                    </div>\n                    <div\n                      class=\"separator\"\n                    />\n                    <img\n                      class=\"logo\"\n                      src=\"/static/media/powered-by-logo.cf538eec.svg\"\n                      style=\"width: 75px; height: 30px;\"\n                    />\n                  </div>\n                  <div\n                    class=\"sc-bdVaJa iVGYFq\"\n                    style=\"flex-grow: 1;\"\n                  />\n                  <div\n                    id=\"UserActions__\"\n                  >\n                    <div\n                      class=\"buttons-container\"\n                    >\n                      <a\n                        href=\"https://help.adopets.com/en/\"\n                        target=\"_blank\"\n                      >\n                        <button\n                          class=\"intercom-trigger\"\n                        >\n                          <span>\n                            <span\n                              data-cy=\"useractions.help\"\n                            >\n                              Help\n                              <span />\n                            </span>\n                          </span>\n                        </button>\n                      </a>\n                      <div\n                        class=\"__UserAvatarDropdown\"\n                      >\n                        <div\n                          class=\"ant-dropdown-link avatar-block ant-dropdown-trigger\"\n                        >\n                          <div\n                            class=\"__PictureFrame avatar-circle\"\n                          >\n                            <svg\n                              aria-hidden=\"true\"\n                              class=\"svg-inline--fa fa-user-circle fa-2x \"\n                              color=\"#E52E6B\"\n                              data-icon=\"user-circle\"\n                              data-prefix=\"fas\"\n                              focusable=\"false\"\n                              role=\"img\"\n                              viewBox=\"0 0 496 512\"\n                              xmlns=\"http://www.w3.org/2000/svg\"\n                            >\n                              <path\n                                d=\"M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z\"\n                                fill=\"currentColor\"\n                              />\n                            </svg>\n                          </div>\n                          <span\n                            class=\"user-name\"\n                          >\n                            lucas\n                          </span>\n                          <span\n                            style=\"color: rgb(229, 46, 107); font-size: 20px;\"\n                          >\n                            <svg\n                              aria-hidden=\"true\"\n                              class=\"svg-inline--fa fa-angle-down \"\n                              data-icon=\"angle-down\"\n                              data-prefix=\"fas\"\n                              focusable=\"false\"\n                              role=\"img\"\n                              viewBox=\"0 0 320 512\"\n                              xmlns=\"http://www.w3.org/2000/svg\"\n                            >\n                              <path\n                                d=\"M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z\"\n                                fill=\"currentColor\"\n                              />\n                            </svg>\n                          </span>\n                        </div>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </header>\n            <main\n              class=\"ant-layout-content\"\n              sty...",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Unable to find an element by: [data-cy=\"pets.notification.created\"]\n\nIgnored nodes: comments, script, style\n<html\n  lang=\"en\"\n>\n  <head>\n     \n    \n    \n    <meta\n      charset=\"utf-8\"\n    />\n    \n    \n    <meta\n      content=\"width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, maximum-scale=1.0\"\n      name=\"viewport\"\n    />\n    \n    \n    <meta\n      content=\"#000000\"\n      name=\"theme-color\"\n    />\n    \n    \n    \n    \n    <link\n      href=\"/manifest.json\"\n      rel=\"manifest\"\n    />\n    \n    \n    <link\n      href=\"/favicon.ico\"\n      rel=\"shortcut icon\"\n    />\n    \n    \n    <link\n      href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\"\n      type=\"text/css\"\n    />\n    \n    \n    <link\n      href=\"https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap\"\n      rel=\"stylesheet\"\n    />\n    \n    \n    \n\n    \n    \n\n    \n    \n    \n    \n    \n    \n\n    \n    \n\n    \n    \n    \n    \n    \n    <title>\n      Adopets\n    </title>\n    \n  \n  </head>\n  \n  \n  <body\n    class=\"themeLight menuShadow borderLess\"\n  >\n    \n    \n    <noscript>\n      \n      You need to enable JavaScript to run this app.\n    \n    </noscript>\n    \n    \n    <div\n      id=\"root\"\n    >\n      <div\n        class=\"sc-bdVaJa MkpTs\"\n        id=\"adopets-root\"\n      >\n        \n        \n        <div\n          class=\"sc-bdVaJa MkpTs\"\n        >\n          <section\n            class=\"ant-layout\"\n          >\n            <div />\n            <header\n              class=\"ant-layout-header\"\n              id=\"MainHeader__\"\n            >\n              <div\n                class=\"header\"\n              >\n                <div\n                  class=\"container\"\n                >\n                  <div\n                    class=\"partners-logo\"\n                  >\n                    <div\n                      class=\"__PictureFrame avatar-circle\"\n                    >\n                      <svg\n                        aria-hidden=\"true\"\n                        class=\"svg-inline--fa fa-user-circle fa-2x \"\n                        color=\"#E52E6B\"\n                        data-icon=\"user-circle\"\n                        data-prefix=\"fas\"\n                        focusable=\"false\"\n                        role=\"img\"\n                        viewBox=\"0 0 496 512\"\n                        xmlns=\"http://www.w3.org/2000/svg\"\n                      >\n                        <path\n                          d=\"M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z\"\n                          fill=\"currentColor\"\n                        />\n                      </svg>\n                    </div>\n                    <div\n                      class=\"separator\"\n                    />\n                    <img\n                      class=\"logo\"\n                      src=\"/static/media/powered-by-logo.cf538eec.svg\"\n                      style=\"width: 75px; height: 30px;\"\n                    />\n                  </div>\n                  <div\n                    class=\"sc-bdVaJa iVGYFq\"\n                    style=\"flex-grow: 1;\"\n                  />\n                  <div\n                    id=\"UserActions__\"\n                  >\n                    <div\n                      class=\"buttons-container\"\n                    >\n                      <a\n                        href=\"https://help.adopets.com/en/\"\n                        target=\"_blank\"\n                      >\n                        <button\n                          class=\"intercom-trigger\"\n                        >\n                          <span>\n                            <span\n                              data-cy=\"useractions.help\"\n                            >\n                              Help\n                              <span />\n                            </span>\n                          </span>\n                        </button>\n                      </a>\n                      <div\n                        class=\"__UserAvatarDropdown\"\n                      >\n                        <div\n                          class=\"ant-dropdown-link avatar-block ant-dropdown-trigger\"\n                        >\n                          <div\n                            class=\"__PictureFrame avatar-circle\"\n                          >\n                            <svg\n                              aria-hidden=\"true\"\n                              class=\"svg-inline--fa fa-user-circle fa-2x \"\n                              color=\"#E52E6B\"\n                              data-icon=\"user-circle\"\n                              data-prefix=\"fas\"\n                              focusable=\"false\"\n                              role=\"img\"\n                              viewBox=\"0 0 496 512\"\n                              xmlns=\"http://www.w3.org/2000/svg\"\n                            >\n                              <path\n                                d=\"M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z\"\n                                fill=\"currentColor\"\n                              />\n                            </svg>\n                          </div>\n                          <span\n                            class=\"user-name\"\n                          >\n                            lucas\n                          </span>\n                          <span\n                            style=\"color: rgb(229, 46, 107); font-size: 20px;\"\n                          >\n                            <svg\n                              aria-hidden=\"true\"\n                              class=\"svg-inline--fa fa-angle-down \"\n                              data-icon=\"angle-down\"\n                              data-prefix=\"fas\"\n                              focusable=\"false\"\n                              role=\"img\"\n                              viewBox=\"0 0 320 512\"\n                              xmlns=\"http://www.w3.org/2000/svg\"\n                            >\n                              <path\n                                d=\"M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z\"\n                                fill=\"currentColor\"\n                              />\n                            </svg>\n                          </span>\n                        </div>\n                      </div>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </header>\n            <main\n              class=\"ant-layout-content\"\n              sty...\n    at Context.applyToPet (webpack:///./cypress/support/e2e/adopter/commands.ts:18:14)",
+                "diff": null
+              },
+              "uuid": "468cd777-1acb-465a-adfd-d7a8bdace796",
+              "parentUUID": "e539f57d-840b-4a9a-950b-78a609560499",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "468cd777-1acb-465a-adfd-d7a8bdace796"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 83766,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "494152c5-0bc2-463f-a626-c5a7ae225825",
+      "title": "",
+      "fullFile": "cypress\\e2e\\kiosk\\default.cy.ts",
+      "file": "cypress\\e2e\\kiosk\\default.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4c608438-9d6b-454d-aa18-ee6d8689103e",
+          "title": "Default",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Default",
+              "fullTitle": "Default Default",
+              "timedOut": null,
+              "duration": 389,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "52c15e84-cd3f-4178-ab00-98ea2edde9ec",
+              "parentUUID": "4c608438-9d6b-454d-aa18-ee6d8689103e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "52c15e84-cd3f-4178-ab00-98ea2edde9ec"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 389,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "764a9d8a-92ca-43ce-9c97-dbb8c33be026",
+      "title": "",
+      "fullFile": "cypress\\e2e\\adopter\\default.cy.ts",
+      "file": "cypress\\e2e\\adopter\\default.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "530922df-7f8a-44a0-b0b2-fa418fbcbd2b",
+          "title": "Adopt a pet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should create a pet",
+              "fullTitle": "Adopt a pet should create a pet",
+              "timedOut": null,
+              "duration": 34779,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(1920, 961);\ncy.visit(_support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"routes\"].adopterUrl + 'login');\ncy.logInAdopter();\nconst pet_uuid = 'pet/070171d5-0ce1-4b02-920d-cdc799272aed';\ncy.applyToPet({ pet_uuid });",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Unable to find an element by: [data-cy=\"input-loginEmail\"]\n\nIgnored nodes: comments, script, style\n<html\n  lang=\"en\"\n>\n  <head>\n     \n    <meta\n      charset=\"utf-8\"\n    />\n    <meta\n      content=\"width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1\"\n      name=\"viewport\"\n    />\n    <meta\n      content=\"#000000\"\n      name=\"theme-color\"\n    />\n    <link\n      href=\"/manifest.json\"\n      rel=\"manifest\"\n    />\n    <link\n      href=\"/favicon.ico\"\n      rel=\"shortcut icon\"\n    />\n    <link\n      href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\"\n    />\n    <link\n      href=\"https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <title>\n      Adopets\n    </title>\n    <link\n      href=\"/static/css/2.40c33ece.chunk.css\"\n      rel=\"stylesheet\"\n    />\n    <link\n      href=\"/static/css/main.7f209bf5.chunk.css\"\n      rel=\"stylesheet\"\n    />\n  </head>\n  <body\n    class=\"themeLight menuShadow borderLess\"\n  >\n    <noscript>\n      You need to enable JavaScript to run this app.\n    </noscript>\n    <div\n      id=\"root\"\n    >\n      <div\n        class=\"sc-bdVaJa MkpTs\"\n        id=\"adopets-root\"\n      >\n        \n        \n        <div\n          class=\"sc-bdVaJa MkpTs\"\n        >\n          <section\n            class=\"ant-layout\"\n          >\n            <div />\n            <header\n              class=\"ant-layout-header\"\n              id=\"MainHeader__\"\n            >\n              <div\n                class=\"header\"\n              >\n                <div\n                  class=\"container\"\n                >\n                  <div\n                    class=\"partners-logo\"\n                  >\n                    <div\n                      class=\"poweredby-container\"\n                    >\n                      <img\n                        class=\"logo\"\n                        src=\"/static/media/adopets-logo-pink.ff9c1080.svg\"\n                      />\n                    </div>\n                  </div>\n                  <div\n                    class=\"sc-bdVaJa iVGYFq\"\n                    style=\"flex-grow: 1;\"\n                  />\n                  <div\n                    id=\"UserActions__\"\n                  >\n                    <div\n                      class=\"buttons-container\"\n                    >\n                      <a\n                        href=\"https://help.adopets.com/en/\"\n                        target=\"_blank\"\n                      >\n                        <button\n                          class=\"intercom-trigger\"\n                        >\n                          <span>\n                            Help\n                          </span>\n                        </button>\n                      </a>\n                      <a\n                        href=\"/login\"\n                      >\n                        <button\n                          class=\"button-basic primary-button \"\n                          style=\"margin-left: 8px; margin-right: 8px;\"\n                        >\n                          <span>\n                            Account\n                          </span>\n                        </button>\n                      </a>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </header>\n            <main\n              class=\"ant-layout-content\"\n              style=\"height: 100%; background-color: rgb(247, 247, 252);\"\n            >\n              <div\n                class=\"sc-bdVaJa dpZZjQ main-content\"\n              >\n                <div\n                  class=\"sc-cqCuEk ZcabD\"\n                >\n                  <div\n                    class=\"sc-bdVaJa gbTChr\"\n                  >\n                    <div\n                      class=\"sc-bdVaJa fGjXNd\"\n                    >\n                      <div\n                        class=\"sc-bdVaJa dpZZjQ\"\n                      >\n                        <div\n                          class=\"sc-bdVaJa sc-eilVRo dBboyT\"\n                          variant=\"h2\"\n                        >\n                          Enter your email and password\n                        </div>\n                      </div>\n                      <form>\n                        <div\n                          class=\"sc-bdVaJa cPQupw\"\n                        >\n                          <div\n                            class=\"form-group-wraper\"\n                            style=\"text-align: left;\"\n                          >\n                            <div\n                              class=\"form-group\"\n                            >\n                              <div\n                                class=\"sc-bdVaJa jQBLqg\"\n                              >\n                                <div\n                                  class=\"sc-bdVaJa irxarB\"\n                                >\n                                  <label\n                                    style=\"float: left; font-weight: 500; font-size: 16px; line-height: 16px;\"\n                                  >\n                                    Email:\n                                  </label>\n                                </div>\n                                <div\n                                  class=\"sc-bdVaJa dpZZjQ\"\n                                />\n                              </div>\n                              <div\n                                class=\"sc-gJWqzi bgmCgm\"\n                              >\n                                <input\n                                  autocomplete=\"\"\n                                  background=\"inherit\"\n                                  class=\"ant-input sc-rBLzX hdqVWg form-input\"\n                                  name=\"loginEmail\"\n                                  placeholder=\"\"\n                                  type=\"text\"\n                                  value=\"\"\n                                />\n                              </div>\n                            </div>\n                          </div>\n                        </div>\n                        <div\n                          class=\"sc-bdVaJa jllOcd\"\n                        >\n                          <div\n                            class=\"form-group-wraper\"\n                            style=\"text-align: left;\"\n                          >\n                            <div\n                              class=\"form-group\"\n                            >\n                              <div\n                                class=\"sc-bdVaJa jQBLqg\"\n                              >\n                                <div\n                                  class=\"sc-bdVaJa irxarB\"\n                                >\n                                  <label\n                                    style=\"float: left; font-weight: 500; font-size: 16px; line-height: 16px;\"\n                                  >\n                                    Current Password:\n                                  </label>\n                                </div>\n                                <div\n                                  class=\"sc-bdVaJa dpZZjQ\"\n                     ...",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Unable to find an element by: [data-cy=\"input-loginEmail\"]\n\nIgnored nodes: comments, script, style\n<html\n  lang=\"en\"\n>\n  <head>\n     \n    <meta\n      charset=\"utf-8\"\n    />\n    <meta\n      content=\"width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,maximum-scale=1\"\n      name=\"viewport\"\n    />\n    <meta\n      content=\"#000000\"\n      name=\"theme-color\"\n    />\n    <link\n      href=\"/manifest.json\"\n      rel=\"manifest\"\n    />\n    <link\n      href=\"/favicon.ico\"\n      rel=\"shortcut icon\"\n    />\n    <link\n      href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700\"\n    />\n    <link\n      href=\"https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <title>\n      Adopets\n    </title>\n    <link\n      href=\"/static/css/2.40c33ece.chunk.css\"\n      rel=\"stylesheet\"\n    />\n    <link\n      href=\"/static/css/main.7f209bf5.chunk.css\"\n      rel=\"stylesheet\"\n    />\n  </head>\n  <body\n    class=\"themeLight menuShadow borderLess\"\n  >\n    <noscript>\n      You need to enable JavaScript to run this app.\n    </noscript>\n    <div\n      id=\"root\"\n    >\n      <div\n        class=\"sc-bdVaJa MkpTs\"\n        id=\"adopets-root\"\n      >\n        \n        \n        <div\n          class=\"sc-bdVaJa MkpTs\"\n        >\n          <section\n            class=\"ant-layout\"\n          >\n            <div />\n            <header\n              class=\"ant-layout-header\"\n              id=\"MainHeader__\"\n            >\n              <div\n                class=\"header\"\n              >\n                <div\n                  class=\"container\"\n                >\n                  <div\n                    class=\"partners-logo\"\n                  >\n                    <div\n                      class=\"poweredby-container\"\n                    >\n                      <img\n                        class=\"logo\"\n                        src=\"/static/media/adopets-logo-pink.ff9c1080.svg\"\n                      />\n                    </div>\n                  </div>\n                  <div\n                    class=\"sc-bdVaJa iVGYFq\"\n                    style=\"flex-grow: 1;\"\n                  />\n                  <div\n                    id=\"UserActions__\"\n                  >\n                    <div\n                      class=\"buttons-container\"\n                    >\n                      <a\n                        href=\"https://help.adopets.com/en/\"\n                        target=\"_blank\"\n                      >\n                        <button\n                          class=\"intercom-trigger\"\n                        >\n                          <span>\n                            Help\n                          </span>\n                        </button>\n                      </a>\n                      <a\n                        href=\"/login\"\n                      >\n                        <button\n                          class=\"button-basic primary-button \"\n                          style=\"margin-left: 8px; margin-right: 8px;\"\n                        >\n                          <span>\n                            Account\n                          </span>\n                        </button>\n                      </a>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </header>\n            <main\n              class=\"ant-layout-content\"\n              style=\"height: 100%; background-color: rgb(247, 247, 252);\"\n            >\n              <div\n                class=\"sc-bdVaJa dpZZjQ main-content\"\n              >\n                <div\n                  class=\"sc-cqCuEk ZcabD\"\n                >\n                  <div\n                    class=\"sc-bdVaJa gbTChr\"\n                  >\n                    <div\n                      class=\"sc-bdVaJa fGjXNd\"\n                    >\n                      <div\n                        class=\"sc-bdVaJa dpZZjQ\"\n                      >\n                        <div\n                          class=\"sc-bdVaJa sc-eilVRo dBboyT\"\n                          variant=\"h2\"\n                        >\n                          Enter your email and password\n                        </div>\n                      </div>\n                      <form>\n                        <div\n                          class=\"sc-bdVaJa cPQupw\"\n                        >\n                          <div\n                            class=\"form-group-wraper\"\n                            style=\"text-align: left;\"\n                          >\n                            <div\n                              class=\"form-group\"\n                            >\n                              <div\n                                class=\"sc-bdVaJa jQBLqg\"\n                              >\n                                <div\n                                  class=\"sc-bdVaJa irxarB\"\n                                >\n                                  <label\n                                    style=\"float: left; font-weight: 500; font-size: 16px; line-height: 16px;\"\n                                  >\n                                    Email:\n                                  </label>\n                                </div>\n                                <div\n                                  class=\"sc-bdVaJa dpZZjQ\"\n                                />\n                              </div>\n                              <div\n                                class=\"sc-gJWqzi bgmCgm\"\n                              >\n                                <input\n                                  autocomplete=\"\"\n                                  background=\"inherit\"\n                                  class=\"ant-input sc-rBLzX hdqVWg form-input\"\n                                  name=\"loginEmail\"\n                                  placeholder=\"\"\n                                  type=\"text\"\n                                  value=\"\"\n                                />\n                              </div>\n                            </div>\n                          </div>\n                        </div>\n                        <div\n                          class=\"sc-bdVaJa jllOcd\"\n                        >\n                          <div\n                            class=\"form-group-wraper\"\n                            style=\"text-align: left;\"\n                          >\n                            <div\n                              class=\"form-group\"\n                            >\n                              <div\n                                class=\"sc-bdVaJa jQBLqg\"\n                              >\n                                <div\n                                  class=\"sc-bdVaJa irxarB\"\n                                >\n                                  <label\n                                    style=\"float: left; font-weight: 500; font-size: 16px; line-height: 16px;\"\n                                  >\n                                    Current Password:\n                                  </label>\n                                </div>\n                                <div\n                                  class=\"sc-bdVaJa dpZZjQ\"\n                     ...\n    at Context.logInAdopter (webpack:///./cypress/support/e2e/adopter/commands.ts:6:7)",
+                "diff": null
+              },
+              "uuid": "157d8a8d-c905-442d-b185-f6a44faae176",
+              "parentUUID": "530922df-7f8a-44a0-b0b2-fa418fbcbd2b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "157d8a8d-c905-442d-b185-f6a44faae176"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 34779,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0bbe402d-1651-4f34-bcf0-5046bcd17293",
+      "title": "",
+      "fullFile": "cypress\\e2e\\kiosk\\default.cy.ts",
+      "file": "cypress\\e2e\\kiosk\\default.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "83f2c9ce-6d0f-4d2e-9a9a-14ea6a0ac87e",
+          "title": "Default",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Default",
+              "fullTitle": "Default Default",
+              "timedOut": null,
+              "duration": 100,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "0af25a7d-856e-495a-b016-c6a0829d7efc",
+              "parentUUID": "83f2c9ce-6d0f-4d2e-9a9a-14ea6a0ac87e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0af25a7d-856e-495a-b016-c6a0829d7efc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 100,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3fd3f4d5-2532-4940-8e9b-82b3f7774339",
+      "title": "",
+      "fullFile": "cypress\\e2e\\rescue\\default.cy.ts",
+      "file": "cypress\\e2e\\rescue\\default.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "329cf112-d5ea-4bc6-a93c-233bfc4a1646",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should successfully log in",
+              "fullTitle": "Login Should successfully log in",
+              "timedOut": null,
+              "duration": 183,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(_support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"baseUrl\"] + 'login');\ncy.logIn();\ncy.url().should('include', 'my-account/applications-active');",
+              "err": {
+                "message": "TypeError: cy.logIn is not a function",
+                "estack": "TypeError: cy.logIn is not a function\n    at Context.eval (webpack:///./cypress/e2e/rescue/default.cy.ts:6:7)",
+                "diff": null
+              },
+              "uuid": "60c97967-86d1-4f4c-997c-1d0b1dbc55c4",
+              "parentUUID": "329cf112-d5ea-4bc6-a93c-233bfc4a1646",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not log in with non-existing user",
+              "fullTitle": "Login Should not log in with non-existing user",
+              "timedOut": null,
+              "duration": 41563,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(_support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"routes\"].rescueUrl);\ncy.logInRescue();\ncy.get('[data-test=\"error\"]').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-test=\"error\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-test=\"error\"]`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/rescue/default.cy.ts:13:34)",
+                "diff": null
+              },
+              "uuid": "3bedebe0-3a1f-48f9-8b69-9397c254d2b1",
+              "parentUUID": "329cf112-d5ea-4bc6-a93c-233bfc4a1646",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "60c97967-86d1-4f4c-997c-1d0b1dbc55c4",
+            "3bedebe0-3a1f-48f9-8b69-9397c254d2b1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 41746,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6c17af65-0bee-472f-9790-e0aea172a978",
+      "title": "",
+      "fullFile": "cypress\\e2e\\kiosk\\default.cy.ts",
+      "file": "cypress\\e2e\\kiosk\\default.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e60ce8f1-5810-424b-9449-7b27d4a4d636",
+          "title": "Default",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Default",
+              "fullTitle": "Default Default",
+              "timedOut": null,
+              "duration": 34,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "005c172c-61a4-4232-a34a-a68f527823bf",
+              "parentUUID": "e60ce8f1-5810-424b-9449-7b27d4a4d636",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "005c172c-61a4-4232-a34a-a68f527823bf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 34,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "41665d0a-f826-422b-b838-803692c7cf1b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\rescue\\newpet.spec.cy.ts",
+      "file": "cypress\\e2e\\rescue\\newpet.spec.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "24d7f25a-2641-44e3-9d61-b9147b769992",
+          "title": "new pet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should test all adoption process",
+              "fullTitle": "new pet should test all adoption process",
+              "timedOut": null,
+              "duration": 21259,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.clearCookies();\ncy.viewport(1920, 961);\ncy.visit(_support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"routes\"].rescueUrl);\n//expect(cy.findByTestId('pets.notification.created'))\ncy.logInRescue();\nconst petName = `cypress ${Math.random()}`;\ncy.createAPet({ name: petName });\n/*cy.fingPublicPetUrl({ name: petName })\ncy.wait(3000)\ncy.url().then((urlString) => {\n  const uuid = urlString.split('/').pop()\n  cy.visit(routes.adopterUrl + 'login')\n  cy.logInAdopter()\n  const pet_uuid = 'pet/' + uuid\n  cy.applyToPet({ pet_uuid })\n})\ncy.wait(4000)\ncy.approveApplication({ name: petName })\ncy.wait(15000)\ncy.url().then((urlString) => {\n  const application_uuid = urlString.split('/').pop()\n  cy.payThePet({ application_uuid: application_uuid })\n})*/\n/*\n */",
+              "err": {},
+              "uuid": "d30e2126-82cc-4ab9-9b37-12aa0cf0b6fb",
+              "parentUUID": "24d7f25a-2641-44e3-9d61-b9147b769992",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d30e2126-82cc-4ab9-9b37-12aa0cf0b6fb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21259,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c088b225-b693-459a-94b5-1f13c9bc8ce4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\kiosk\\default.cy.ts",
+      "file": "cypress\\e2e\\kiosk\\default.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6cfe3623-3325-4b77-a89c-978de4ccaef5",
+          "title": "Default",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Default",
+              "fullTitle": "Default Default",
+              "timedOut": null,
+              "duration": 38,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "2e97dabb-32ae-46b3-a074-46c6fb1d9c9d",
+              "parentUUID": "6cfe3623-3325-4b77-a89c-978de4ccaef5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e97dabb-32ae-46b3-a074-46c6fb1d9c9d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 38,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "54ccf14c-f93a-4337-8f0a-d311ca844362",
+      "title": "",
+      "fullFile": "cypress\\e2e\\rescue\\newpet.spec.cy.ts",
+      "file": "cypress\\e2e\\rescue\\newpet.spec.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c60ec973-c6ad-4e92-8683-e79dc8d40a97",
+          "title": "new pet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should test all adoption process",
+              "fullTitle": "new pet should test all adoption process",
+              "timedOut": null,
+              "duration": 20701,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.clearCookies();\ncy.viewport(1920, 961);\ncy.visit(_support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"routes\"].rescueUrl);\n//expect(cy.findByTestId('pets.notification.created'))\ncy.logInRescue();\nconst petName = `cypress ${Math.random()}`;\ncy.createAPet({ name: petName });\n/*cy.fingPublicPetUrl({ name: petName })\ncy.wait(3000)\ncy.url().then((urlString) => {\n  const uuid = urlString.split('/').pop()\n  cy.visit(routes.adopterUrl + 'login')\n  cy.logInAdopter()\n  const pet_uuid = 'pet/' + uuid\n  cy.applyToPet({ pet_uuid })\n})\ncy.wait(4000)\ncy.approveApplication({ name: petName })\ncy.wait(15000)\ncy.url().then((urlString) => {\n  const application_uuid = urlString.split('/').pop()\n  cy.payThePet({ application_uuid: application_uuid })\n})*/\n/*\n */",
+              "err": {},
+              "uuid": "20f9ce7f-aec5-46bb-bb85-95bb6cfe7fd8",
+              "parentUUID": "c60ec973-c6ad-4e92-8683-e79dc8d40a97",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "20f9ce7f-aec5-46bb-bb85-95bb6cfe7fd8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20701,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b229014b-f622-4684-a2d2-75436fa85b9e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\kiosk\\default.cy.ts",
+      "file": "cypress\\e2e\\kiosk\\default.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "834cf599-fc48-447b-9484-6e4fa7a3f053",
+          "title": "Default",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Default",
+              "fullTitle": "Default Default",
+              "timedOut": null,
+              "duration": 37,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "8f3feae3-be85-49ba-aec9-00447ed3b33b",
+              "parentUUID": "834cf599-fc48-447b-9484-6e4fa7a3f053",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8f3feae3-be85-49ba-aec9-00447ed3b33b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 37,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1a90a6cd-0674-4120-9e6e-2d0ea0daa35d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\rescue\\newpet.spec.cy.ts",
+      "file": "cypress\\e2e\\rescue\\newpet.spec.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e7e39927-f64b-4bbb-bea0-2a27e4d7e3ae",
+          "title": "Rescue: Add new pet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "create a new pet",
+              "fullTitle": "Rescue: Add new pet create a new pet",
+              "timedOut": null,
+              "duration": 34124,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.clearCookies();\ncy.viewport(1920, 961);\ncy.visit(_support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"routes\"].rescueUrl);\n//expect(cy.findByTestId('pets.notification.created'))\ncy.logInRescue();\nconst petName = `cypress ${Math.random()}`;\ncy.createAPet({ name: petName });\n/*cy.fingPublicPetUrl({ name: petName })\ncy.wait(3000)\ncy.url().then((urlString) => {\n  const uuid = urlString.split('/').pop()\n  cy.visit(routes.adopterUrl + 'login')\n  cy.logInAdopter()\n  const pet_uuid = 'pet/' + uuid\n  cy.applyToPet({ pet_uuid })\n})\ncy.wait(4000)\ncy.approveApplication({ name: petName })\ncy.wait(15000)\ncy.url().then((urlString) => {\n  const application_uuid = urlString.split('/').pop()\n  cy.payThePet({ application_uuid: application_uuid })\n})*/\n/*\n */",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Unable to find an element by: [data-cy=\"input-email2\"]\n\nIgnored nodes: comments, script, style\n<html\n  lang=\"en\"\n>\n  <head>\n     \n    <meta\n      charset=\"utf-8\"\n    />\n    <link\n      href=\"/favicon.png\"\n      rel=\"shortcut icon\"\n    />\n    <meta\n      content=\"viewport-fit=cover,width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no\"\n      name=\"viewport\"\n    />\n    <meta\n      content=\"#000000\"\n      name=\"theme-color\"\n    />\n    <link\n      href=\"/manifest.json\"\n      rel=\"manifest\"\n    />\n    <link\n      href=\"resources/fonts/Geomanist/stylesheet.css\"\n      rel=\"stylesheet\"\n    />\n    <link\n      href=\"/static/css/2.cf38962f.chunk.css\"\n      rel=\"stylesheet\"\n    />\n    <link\n      href=\"/static/css/main.631d0ef1.chunk.css\"\n      rel=\"stylesheet\"\n    />\n    <title>\n      Adopets | Adopets\n    </title>\n  </head>\n  <body\n    style=\"overflow: auto;\"\n  >\n    <noscript>\n      You need to enable JavaScript to run this app.\n    </noscript>\n    <div\n      id=\"over\"\n    />\n    <div\n      id=\"root\"\n    >\n      <div />\n      <div\n        style=\"width: 100%; height: 100vh;\"\n      >\n        <div\n          class=\"sc-kOCNXg hpXjdU\"\n        >\n          <section\n            class=\"ant-layout\"\n          >\n            <div\n              class=\"sc-hZhUor hSLgkv main-header\"\n            >\n              <img\n                alt=\"\"\n                height=\"22.561\"\n                src=\"data:image/png;base64,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...",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Unable to find an element by: [data-cy=\"input-email2\"]\n\nIgnored nodes: comments, script, style\n<html\n  lang=\"en\"\n>\n  <head>\n     \n    <meta\n      charset=\"utf-8\"\n    />\n    <link\n      href=\"/favicon.png\"\n      rel=\"shortcut icon\"\n    />\n    <meta\n      content=\"viewport-fit=cover,width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no\"\n      name=\"viewport\"\n    />\n    <meta\n      content=\"#000000\"\n      name=\"theme-color\"\n    />\n    <link\n      href=\"/manifest.json\"\n      rel=\"manifest\"\n    />\n    <link\n      href=\"resources/fonts/Geomanist/stylesheet.css\"\n      rel=\"stylesheet\"\n    />\n    <link\n      href=\"/static/css/2.cf38962f.chunk.css\"\n      rel=\"stylesheet\"\n    />\n    <link\n      href=\"/static/css/main.631d0ef1.chunk.css\"\n      rel=\"stylesheet\"\n    />\n    <title>\n      Adopets | Adopets\n    </title>\n  </head>\n  <body\n    style=\"overflow: auto;\"\n  >\n    <noscript>\n      You need to enable JavaScript to run this app.\n    </noscript>\n    <div\n      id=\"over\"\n    />\n    <div\n      id=\"root\"\n    >\n      <div />\n      <div\n        style=\"width: 100%; height: 100vh;\"\n      >\n        <div\n          class=\"sc-kOCNXg hpXjdU\"\n        >\n          <section\n            class=\"ant-layout\"\n          >\n            <div\n              class=\"sc-hZhUor hSLgkv main-header\"\n            >\n              <img\n                alt=\"\"\n                height=\"22.561\"\n                src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAABCCAYAAADt9OvrAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAABNYSURBVHgB7Z1fbxtJcsCrekh6gcA2fcktbv0npvIUHGKZxj3k0dS+Bysf8hzLAQJs5D1Y3rzH9BdYS8BaOSDASv4AyeryAWw6X0C09hDk6UTH1tq53Mb0w93ZJKf7qmY41HDE4fRweijNXv8Aw+JwODM93V1dVV1djWDR5sXialMA3pt2jlLQuvjNwyXIwMHibQVzxsRzW04OL6+sriDiVvBZSly69MsvW1BwBFgsFktBsALLYrEUBiuwLBZLYbACy2KxFAYrsCwWS2EogeXEwTN2MGeUUs/AYjnhWIF1ArHhBRbLZKxJaLFYCoMVWBaLpTBYgWWxWApDKh/Wfm2tWq72ltUA6g7CZQCsKlQ1VNjh711y3KqSarndU62Fzno3+vuDxdX9pHso0b9xsf2vbciJF/VPG44UV5XCOgLUFEKVj6MCel7VBYSWFP2neT6DCV7VP625IBpxdcFlcRGeKaHacfVhmnD9KoBfXNzbXEv6zcv6P9SFLF93JSwIxLPh7ySq5/z8Agadk1of4XqIe/7yO9X+6L9/3oEc+fbK7Sfhz9Sua+HPQqgHdI5WG6B29PTC3mYTDKKaTehsd6tO9X2jJPEy97/w98G7SmqrWgKL1yUJwJsK+w26MqDwGuQQHL0cqjD+/o5zpg8HV25vi757f7yisJZ0LzU4VQXDvPrLT2tQETcl4BpIqCr/sSG8YI/K4B8EWEZZ4fV8HSpm86O9h4/ghMADxgdneneoshtSQoOfNq4u+G/6apnri+uDGmsLEbbzLQ/WRn8hnI07iwcNGIhlIfBmUB9igq4vuD4kl9KvDypoSzruo0vtn7fgGAnqQQKsSIm1oB6iBM9PzYmfnwQvrEPPfZqH8KJ6byScUvfbuAYYDHrZUY178LL7v41X//Z/9ypnoA5SjPpfmOBdxcuO4LwpcMPiUZMXUWq8kHGQKrPi7L9aXL0HxwQ3LL4/PwcJqyYdSiMMa9Qgt6mh7XsC7xgJylE50/fKkbouwG/Qo/Is3r4JxwC/R9YEhHSekLC6Aynrg9sU/5bKsHtwZfUTmDNcD98u3n5A9fDGb09YS/HzOr//oE/s19eMD8wnDa/d/v9vHnCdDdusXpmHsoPayhdHv4qBK4YkYaJKr0m7J8pLFdl/k3SiqVXl3DlkRTxJ2ahioXHyrktm1zyyNYT5nyufLTuoeNW96QbeET13yeRoP5ZlgrS5C88e3go+vl5cvePGDxpt0p7abBaEDwoFV2m0r9Gf9Yk3VBA7EptmSj10qc7bZEY9c6iPSgVvvUcjTZdsEda+rsLk5zf6/tkKGjtA1g7dOzQwqfv0nB3QQDmyk1WLZWFFgp3N1LGyc/9QiE9RyY5SouMdI7cMomxQ37oOR9/VLsmOjxfavpk40SQ8uHp7iy68Auaok7B6AnPi5Y9X67KEfD9jnVyBeCC4Y80RTzsk6x/ygQS6s0sd8daff/PlDuQItyc30p644QpUO+9F5VHQGOPw/ESuaJCZeW9sAPJH4gYNTkt5Cq1J9eAH96pHfaeyM+Pz13xt6/aKCTP94jeb2+HPJMBYaI0ElpSiNc/0MqdO97YUjPmpdkkZ+XzKM+x45uNvvlsSQn4Vek/XTrn9f6f/P+YPRzQsw5pVarJqWL5m5eyCeY1EC1MaFndyMDtoxMLa4/m9f1mHjEzSsCaUo0uCf23WTurneYoILtZyBmrp4n9tGh9QfGHlaYaje836/GwGluRgTYAa09LpeiumfYvHmQ8rem9E9fX5Z5s/1f39wU/+CVX/3VZIQyQlTH7ObXTMh8WVc5zCKiuHZuDxCCtTeH6/OQkrhrXHPPxaE8rRFsK9lqVzsiZBIzANCKoTOlxF0qhN+xonCKtOludnTezS3pdNV+EN+jjSysi3tX7cflKT8ARd6CP5wOXnkILzf3Na9UXpLhxaNDSJL/7Zv/YQr7OPV07hcMtO05TP6rhgX89x1IPxTqPYyTxWDs+P+VE7u+nG1+iJyjUYN9GrpFk/MeXMntAfWFgZeX42wVkjhEOhxc/+NXwP4Pc/NimE0Er7zrDZhFq1+oZNSP7MVgvNf9/nv0cCy+/s6RheaE0pdYtVTu9/UBuR0W8ucAMjUyGtltDl5+Xn5lGP/3F5qGC5+nTi4DK4qYWV6kwpQ5rYK9OdJuy/6LCwSvL1pIGvxdeMtLUa+TuMzEoPNfUAY8IqgM1Xsmbuhw7Vv138x8JaNwHlXq8W+qhcqf4TZgBb9+Hi3/7ZE6rjc+xiOb+3ucHHPae7N5qk6Oxkk+6Qmnd3SgWuxfgacoMFrm6YCST7ITY8R6n0rjm3EIBhGXQ1hA4NErcu/fJhK+b7jZDPRDeEwOs0JvxZYbizL7QfGg9cZaFF9bQk5aHPkkb3NWrPG1mc8P6MG9aCz148nkFhFXBx7+E6Td1/EmgkZPZwuMO2ScFeZFjTgsig62lYabQrUpPvkwPtRlIFHvoa8p9ZS6ldafkhuHzUoFZYc4E5kKYMNDI/opHnWpITNfCZcHl1td5hpzHmA+T2kkdnD+Br+1r9IYOKyKSp+APtiE6ewbakEYe1rGrF7V2HAuNUZFjAkO/dC+swhvCvClpBeNz4uAOAJr6v4Yjabhy3LBqap6ZW7VnwkoC4CzmjO2iwdsuCNM0ozOWd4KiOo1qW71fADJ2SGGxDzgxEhTXC0ftgp++sQteLwgesHV4LmpAjPOhgKP8Z8mqMAjPsW0bqYhLCryAtc6GTRlgFcMeSUuSqpURmJaacN5tqz6o75phUjytUU7vqsCkOM+BpIpr1IJQwE0U+g8N1Frw2BiqsBc0sdNF1VsKf34nyLyBnXFRPg7/JPKwXPQo+ovGeq7j9L8AQAqRo6J04+0gTHUVMw5WscVom1T6iuhvFcQcNnfOy+lK4HticTDqPfSomOo10Mcd1i9GbibGJEkQxkykSNmF4Umke/iSlxNhsZxl+W4MCE9V4aeC6Rb66xyZmoYW3/CGZzHZ8ZAQ0Bke1g4aGmFW1H/qLcvHH8bIEjdOM+FKUxG2d8wz4UrrzjKwe3uuwk6j06y2HQno0+PFyG5gDZWcw1q6kW9YZgE8sLOQjYRs8CC5x2AnHtmURXGK4ViuB7BXHSxggB6QjajrnuaKXuQwkdJ9CDjgKNQYNM53nSMeOuxuqBcgAr6+D+dMJ/V1LqyWW4N2YoMA5hedEtWaMpIYpIl7Yhqs+joadcGwbr0Q5uHJ7i1MLQUo4rKGWdJIC1YKMsNQ9WFztmA5zIJu2OmUN9wgT+ZSQO2GK2AldgpxcU88xUAeHF6NrIS5PO2VWk2r0e6G30NYkCuQzBDHqBB/AO36v2iYduqIWrl+61j1qs3dgzgjEy/A94MIPP9x93X29NCE8qMrrQFFWVjjzBlk/G7ppd0qgYU5JhYbseFPXOcRfFZ9IBwzAq9hROpADtaQTUOE+GEIiPE9MNavUOciAVOotHDODQakGaeoeVXTw48+FdoAfJ9hq8n8d1WiukOBqxsQ1XuO0O1BxvDxYSfnOtFIk4zANRFb8rJ6WCWgMGsKkAEg2CRWehWzMva4VZEs8p6xwygUWXGz2XvjBD1eEcBeGsY1HLZ7DfGe/ilvbqpVxVKGsgSVPuHNP7SwCZVYBEmYeHXPunZ98TjXIYLMjp8gO/Z471zzCMv5YCDQu+rdNWtc2aV3D1STqesRVtMBa17dXVj/Bvvw8bCoKnWBC4anK2dEMP0gF6iUlM/L8no8jF1TuTvAwNDOc6CPJ6oOK5jefBxjRCkulQQfSEHF9uOBajSsnAq2Lg6DLP4Ch1jUuixTiDXLQPx5GAngIHb9SVgcsM5zKNN4AJAgd06PKawMhM9iAPNCYUTNRB4cXSx44yAf1HLKgzA9OiURmvNNqR+yjHLucW/5eOL9POh+2Nr0VJTGCawFLOIrhEjyzknhFBcuQkRTLZ1IRjWGJvb/EzGVAVLms82IneOJJVAcmgjn90QprSedRw9iFbNTmGbEdjaGCGWLmBvDB2G9MarWWZFhwXfjTD3kN8sc4njHlnCo7X/Ef7HTXqdjqi7/6rAEZ0F0+k5bo2qXY+2dcbhJdY2YS1ItZqn4g+9mXzDh6a9WEI7PGfVVLg8HctKwjqwUwvcDyo9oPR3fMS6O2xMKm4o+Wf7T/3in/PYRkE6++YBkkYIAtnQs5qGbOM8TpOmbZ6UUX0hIT13sFBYYZEVJsQU7oBtVykr0sWkuKjBBtI85mITNrtdq3AjV+LzlbTjN6x6G2hNf/GHa3OWlEE/gFh4Wj/k74ebCTHe/c4WfZsmvYSWYWdjpI5Wg1TiHU1izLAvxyYw1ygkd2zbWW1VNuf6Yke6H00Yl4++cZwPRK/TgmCOJuz6nMtiphfE1i4dO9FBVO4IeClamQbCK/qBeHJTUWxPrnYTON0DK91VYcrlNqgV7cT81bz5RCaE3I650LuoureeCg6d6vU5UhXT10QLimliBVS7KnZYJm4UhqHoSdWRctR9eMFj3dS0ARQ5NKcCo6IVX1BNaR1dVT4M7L64CmdZjQBqa7eQsrZpheZEPzdF9oJWy6wD4r3vRzXvnV02S0oOneZZ0yzFIPVN5HJmOPeB/H8LS0abieomauQDdTZg2aqRq1JW+AmEPq4rw3oTAVmqQDrxE0kpnh1O94wBh77lGU3IvF1WbSJqETaEupnjoC9qWAt0pCTSi8TFdlf8JML2jW7YjY9KjI/n7K+5IpplouwjOOOxISzroSFhzEq7P63LJs88Udm6Zw087OjZXBe4YB1GcsAydcvDardjK2zZfB68YxSXNMm2QyDh6sQu+vK3rutbz2Pgy21iM/XPOjvU0jaYyOtKXIxrZ5wL5qdgPwe+PB93zG7e5eLv6MxiL3V0H9Ut96Mlqa42tZqVen13nLcQW4jhK3PIGH3rZOc3dUeiktxpP661BlbYWfm5+fy+GVJ8cJgmkMNyZIm6BvrAxePcxYBs4Rb0qoKD+zRXCtGm+ka1KLiDFzOyaEFYOOy507eH7eoONxHlpQeGs9z+VSN3OPfqXSGTug8m/TvK53lJ8+o2bKm6oq0W+E6pe6p/yPkcDyc9jA2H5pRYMzgypNf9xJ5bjK4GkmBvNXIeI+mVZh4VtP6z+Mw9vZe4Kw4vTXYAinKjr0/OFZqoVo1HUW2FznTWbDLgcerEyZ4xMmcmpZQ5OSuLS32QwrPQrEF7Psd6lolvD58+45mpn/KnzcEWpnbPGzN8KPN7LC0RdlluqpY3BOEt7mF3MUWqbMqCgcvczXDh0abs+efraZCXxyvqmDtdBXXSXUDZO+Nw5i/BOnshV5fo663iVz8cGsgpc1B/a7Vc70dsObzPJ9eLACg0gcD/ehWfIHec/aRtJwI03obaXRtFhYdR69OVc+PXgcMfU3uH4nrhSNbjVtEBYkU0coE1tqc6Xw9H8Opl3i85vaqp55sfjZ+nCLrtzgUd1UR5m0VT3/SeVoRrdnB56NpHelnN5GUq4y7uAlKa5Lf8Yu2uGM7xkY5ru//hn8/vfyLnWUaF7yLj3/TlI6FGbYCaunTvdvkq20HG2XeQ0Yvl+3t3t...\n    at Context.logInRescue (webpack:///./cypress/support/e2e/rescue/commands.ts:10:7)",
+                "diff": null
+              },
+              "uuid": "37088b74-4949-4096-9aec-e7d106864e22",
+              "parentUUID": "e7e39927-f64b-4bbb-bea0-2a27e4d7e3ae",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "37088b74-4949-4096-9aec-e7d106864e22"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 34124,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b205d5cb-99c9-4767-80dc-6c74652d221b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\1-getting-started\\todo.cy.js",
+      "file": "cypress\\e2e\\1-getting-started\\todo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e5137b38-9927-46a2-a977-590758acea0e",
+          "title": "example to-do app",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "displays two todo items by default",
+              "fullTitle": "example to-do app displays two todo items by default",
+              "timedOut": null,
+              "duration": 1473,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// We use the `cy.get()` command to get all elements that match the selector.\n// Then, we use `should` to assert that there are two matched items,\n// which are the two default items.\ncy.get('.todo-list li').should('have.length', 2); // We can go even further and check that the default todos each contain\n// the correct text. We use the `first` and `last` functions\n// to get just the first and last matched elements individually,\n// and then perform an assertion with `should`.\ncy.get('.todo-list li').first().should('have.text', 'Pay electric bill');\ncy.get('.todo-list li').last().should('have.text', 'Walk the dog');",
+              "err": {},
+              "uuid": "c25d8c7d-af1b-4331-b080-a38b1bee5a50",
+              "parentUUID": "e5137b38-9927-46a2-a977-590758acea0e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "can add new todo items",
+              "fullTitle": "example to-do app can add new todo items",
+              "timedOut": null,
+              "duration": 440,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// We'll store our item text in a variable so we can reuse it\nconst newItem = 'Feed the cat'; // Let's get the input element and use the `type` command to\n// input our new list item. After typing the content of our item,\n// we need to type the enter key as well in order to submit the input.\n// This input has a data-test attribute so we'll use that to select the\n// element in accordance with best practices:\n// https://on.cypress.io/selecting-elements\ncy.get('[data-test=new-todo]').type(`${newItem}{enter}`); // Now that we've typed our new item, let's check that it actually was added to the list.\n// Since it's the newest item, it should exist as the last element in the list.\n// In addition, with the two default items, we should have a total of 3 elements in the list.\n// Since assertions yield the element that was asserted on,\n// we can chain both of these assertions together into a single statement.\ncy.get('.todo-list li').should('have.length', 3).last().should('have.text', newItem);",
+              "err": {},
+              "uuid": "d6c0a336-2d2f-4d60-83f0-497e6233222d",
+              "parentUUID": "e5137b38-9927-46a2-a977-590758acea0e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "can check off an item as completed",
+              "fullTitle": "example to-do app can check off an item as completed",
+              "timedOut": null,
+              "duration": 223,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// In addition to using the `get` command to get an element by selector,\n// we can also use the `contains` command to get an element by its contents.\n// However, this will yield the <label>, which is lowest-level element that contains the text.\n// In order to check the item, we'll find the <input> element for this <label>\n// by traversing up the dom to the parent element. From there, we can `find`\n// the child checkbox <input> element and use the `check` command to check it.\ncy.contains('Pay electric bill').parent().find('input[type=checkbox]').check(); // Now that we've checked the button, we can go ahead and make sure\n// that the list element is now marked as completed.\n// Again we'll use `contains` to find the <label> element and then use the `parents` command\n// to traverse multiple levels up the dom until we find the corresponding <li> element.\n// Once we get that element, we can assert that it has the completed class.\ncy.contains('Pay electric bill').parents('li').should('have.class', 'completed');",
+              "err": {},
+              "uuid": "9739d872-3bfa-44b7-8189-73ce72685f50",
+              "parentUUID": "e5137b38-9927-46a2-a977-590758acea0e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "1b92589b-ab65-41cf-9f0d-516afda421f3",
+              "title": "with a checked task",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "can filter for uncompleted tasks",
+                  "fullTitle": "example to-do app with a checked task can filter for uncompleted tasks",
+                  "timedOut": null,
+                  "duration": 328,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// We'll click on the \"active\" button in order to\n// display only incomplete items\ncy.contains('Active').click(); // After filtering, we can assert that there is only the one\n// incomplete item in the list.\ncy.get('.todo-list li').should('have.length', 1).first().should('have.text', 'Walk the dog'); // For good measure, let's also assert that the task we checked off\n// does not exist on the page.\ncy.contains('Pay electric bill').should('not.exist');",
+                  "err": {},
+                  "uuid": "c9b36d0c-465a-4cbb-a6a8-3d370928c086",
+                  "parentUUID": "1b92589b-ab65-41cf-9f0d-516afda421f3",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "can filter for completed tasks",
+                  "fullTitle": "example to-do app with a checked task can filter for completed tasks",
+                  "timedOut": null,
+                  "duration": 351,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// We can perform similar steps as the test above to ensure\n// that only completed tasks are shown\ncy.contains('Completed').click();\ncy.get('.todo-list li').should('have.length', 1).first().should('have.text', 'Pay electric bill');\ncy.contains('Walk the dog').should('not.exist');",
+                  "err": {},
+                  "uuid": "a4610916-3ea1-4785-bf1a-3d92777373e8",
+                  "parentUUID": "1b92589b-ab65-41cf-9f0d-516afda421f3",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "can delete all completed tasks",
+                  "fullTitle": "example to-do app with a checked task can delete all completed tasks",
+                  "timedOut": null,
+                  "duration": 330,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// First, let's click the \"Clear completed\" button\n// `contains` is actually serving two purposes here.\n// First, it's ensuring that the button exists within the dom.\n// This button only appears when at least one task is checked\n// so this command is implicitly verifying that it does exist.\n// Second, it selects the button so we can click it.\ncy.contains('Clear completed').click(); // Then we can make sure that there is only one element\n// in the list and our element does not exist\ncy.get('.todo-list li').should('have.length', 1).should('not.have.text', 'Pay electric bill'); // Finally, make sure that the clear button no longer exists.\ncy.contains('Clear completed').should('not.exist');",
+                  "err": {},
+                  "uuid": "23c185bd-8baf-4bca-9459-28b4ec25771e",
+                  "parentUUID": "1b92589b-ab65-41cf-9f0d-516afda421f3",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "c9b36d0c-465a-4cbb-a6a8-3d370928c086",
+                "a4610916-3ea1-4785-bf1a-3d92777373e8",
+                "23c185bd-8baf-4bca-9459-28b4ec25771e"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1009,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "c25d8c7d-af1b-4331-b080-a38b1bee5a50",
+            "d6c0a336-2d2f-4d60-83f0-497e6233222d",
+            "9739d872-3bfa-44b7-8189-73ce72685f50"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2136,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

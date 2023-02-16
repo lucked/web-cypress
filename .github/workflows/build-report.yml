@@ -18,8 +18,8 @@ jobs:
           $(npm bin)/cypress cache path
           $(npm bin)/cypress cache list
           $(npm bin)/cypress verify
-      - name: Run tests
-        run: npm run test
+      - name: Run Rescue tests
+        run: npm run rescue
         continue-on-error: true
       - name: Deploy report
         uses: peaceiris/actions-gh-pages@v3

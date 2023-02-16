@@ -1,7 +1,7 @@
 import { routes } from '../../support/helpers'
 
-describe('new pet', () => {
-  it.only('should test all adoption process', () => {
+describe('Rescue: Add new pet', () => {
+  it.only('create a new pet', () => {
     cy.clearCookies()
     cy.viewport(1920, 961)
     cy.visit(routes.rescueUrl)

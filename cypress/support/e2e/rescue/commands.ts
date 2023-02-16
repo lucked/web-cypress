@@ -7,7 +7,7 @@ Cypress.Commands.add('configureCypressTestingLibrary', (config) => {
 
 const commands = {
   logInRescue(data = {}) {
-    cy.findByTestId('input-email').type(data.email || 'luckedlucas+1@gmail.com' || users.primary.email)
+    cy.findByTestId('input-email2').type(data.email || 'luckedlucas+1@gmail.com' || users.primary.email)
     cy.findByTestId('input-password').type(data.password || users.primary.password)
     cy.findByTestId('globals.login.confirm').click()
   },

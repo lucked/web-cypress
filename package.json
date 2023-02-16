@@ -1,0 +1,49 @@
+{
+  "name": "web-cypress",
+  "version": "0.0.1",
+  "scripts": {
+    "kiosk-staging": "cypress run -e product=kiosk,env=staging",
+    "kiosk-release": "cypress run -e product=kiosk,env=release",
+    "kiosk-production": "cypress run -e product=kiosk,env=production",
+    "adopter-staging": "cypress run -e product=adopter,env=staging",
+    "adopter-release": "cypress run -e product=adopter,env=release",
+    "adopter-production": "cypress run -e product=adopter,env=production",
+    "rescue-staging": "cypress open -e product=rescue,env=staging",
+    "rescue": "cypress run -e product=rescue,env=staging",
+    "rescue-release": "cypress run -e product=rescue,env=release",
+    "rescue-production": "cypress run -e product=rescue,env=production",
+    "add-project": "hygen project with-prompt && prettier --write .",
+    "clean-reports": "rm -rf cypress/reports && mkdir -p cypress/reports/mochareports",
+    "pretest": "npm run clean-reports",
+    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+    "generate-report": "marge cypress/reports/mochareports/report.json -f index -o cypress/reports/mochareports/",
+    "posttest": "npm run combine-reports && npm run generate-report && npm run add-cname",
+    "add-cname": "cp ./CNAME cypress/reports/mochareports/"
+  },
+  "dependencies": {
+    "@cypress-audit/lighthouse": "1.3.1",
+    "@faker-js/faker": "7.6.0",
+    "@optimumqa/cypress-setup-utilities": "1.5.1",
+    "@optimumqa/cypress-store": "1.0.2",
+    "cypress": "^11.1.0",
+    "cypress-commands": "^3.0.0",
+    "cypress-if": "1.10.1",
+    "cypress-iframe": "1.0.1",
+    "cypress-localstorage-commands": "2.2.1",
+    "cypress-multi-reporters": "1.6.1",
+    "cypress-terminal-report": "4.1.2",
+    "eslint": "8.26.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "hygen": "6.2.11",
+    "lodash": "4.17.21",
+    "mocha": "10.1.0",
+    "mochawesome": "7.1.3",
+    "mochawesome-merge": "4.2.1",
+    "mochawesome-report-generator": "6.2.0",
+    "moment": "2.29.4",
+    "typescript": "4.8.4"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.7"
+  }
+}
